@@ -14,159 +14,13 @@ import {
   Label,
   LabelList
 } from "recharts";
+import softwareTestingFacetsData from '../data/software_testing_facets.json';
+import MLAlgorithmData from '../data/ml_algorithm.json';
+import learningCategoryData from '../data/learning_category.json';
 
 const SOFTWARE_TESTING_FACETS = "Software Testing Facets";
 const LEARNING_CATEGORY = "Learning Category";
 const ML_ALGORITHM = "ML Algorithm";
-
-const softwareTestingFacetsData = [
-  {
-    name: "Compatibility Testing",
-    index: 0,
-    amt: 0
-  },
-  {
-    name: "Conformance Testing",
-    index: 1,
-    amt: 0
-  },
-  {
-    name: "Detection of Metamorphic Relations",
-    index: 2,
-    amt: 1
-  },
-  {
-    name: "Mutation Testing Automation",
-    index: 3,
-    amt: 0
-  },
-  {
-    name: "Test Case Design",
-    index: 4,
-    amt: 9
-  },
-  {
-    name: "Test Case Evaluation",
-    index: 5,
-    amt: 3
-  },
-  {
-    name: "Test Case Prioritization",
-    index: 6,
-    amt: 6
-  },
-  {
-    name: "Test Case Refinement",
-    index: 7,
-    amt: 1
-  },
-  {
-    name: "Test Oracle Construction",
-    index: 8,
-    amt: 1
-  },
-  {
-    name: "Testing Cost Estimation",
-    index: 9,
-    amt: 0
-  },
-  {
-    name: "Test Harness",
-    index: 10,
-    amt: 1
-  },
-  {
-    name: "Testing Technique Selection",
-    index: 11,
-    amt: 0
-  },
-  {
-    name: "None of the above",
-    index: 12,
-    amt: 49
-  }
-];
-
-const learningCategoryData = [
-  {
-    name: "Meta-algorithm",
-    index: 0,
-    amt: 1
-  },
-  {
-    name: "Semi-supervised",
-    index: 1,
-    amt: 2
-  },
-  {
-    name: "Supervised",
-    index: 2,
-    amt: 51
-  },
-  {
-    name: "Supervised and semi-supervised",
-    index: 3,
-    amt: 0
-  },
-  {
-    name: "Unsupervised",
-    index: 4,
-    amt: 12
-  },
-  {
-    name: "None of the above",
-    index: 5,
-    amt: 5
-  }
-];
-
-const MLAlgorithmData = [
-  {
-    name: "ANN",
-    index: 0,
-    amt: 18
-  },
-  {
-    name: "Bayesian",
-    index: 1,
-    amt: 0
-  },
-  {
-    name: "Clustering",
-    index: 2,
-    amt: 6
-  },
-  {
-    name: "Decision Tree",
-    index: 3,
-    amt: 3
-  },
-  {
-    name: "Ensemble Algorithm",
-    index: 4,
-    amt: 11
-  },
-  {
-    name: "Instance Based",
-    index: 5,
-    amt: 6
-  },
-  {
-    name: "Learning Finite Automata",
-    index: 6,
-    amt: 1
-  },
-  {
-    name: "Regression",
-    index: 7,
-    amt: 2
-  },
-  {
-    name: "None of the above",
-    index: 8,
-    amt: 24
-  }
-];
 
 const ClassificationTwoPage = () => {
   const [category, setCategory] = useState(SOFTWARE_TESTING_FACETS);
@@ -234,7 +88,7 @@ const ClassificationTwoPage = () => {
       9. Testing Cost Estimation<br />
       10. Test Harness<br />
       11. Testing Technique Selection<br />
-      12. None of the above.<br />
+      12. None of the Above.<br />
     </p>
     : 
     category === LEARNING_CATEGORY ? 
@@ -244,7 +98,7 @@ const ClassificationTwoPage = () => {
       2. Supervised<br />
       3. Supervised and semi-supervised<br />
       4. Unsupervised<br />
-      5. None of the above.<br />
+      5. None of the Above.<br />
     </p>
     :
     <p>
@@ -256,7 +110,7 @@ const ClassificationTwoPage = () => {
       5. Instance Based<br />
       6. Learning Finite Automata<br />
       7. Regression<br />
-      8. None of the above.<br />
+      8. None of the Above.<br />
     </p>
   );
 

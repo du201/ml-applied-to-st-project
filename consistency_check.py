@@ -71,12 +71,9 @@ else:
 
 # The finish of the consistency test
 
-if passed == True: # generate more detailed info about classifications here
-  class_1['paper url'] = class_1.index
-  # class_1.reset_index()
-  print(class_1)
-  class_1.to_json(orient ='records', path_or_buf="./src/data/classification_one_datasource.json")
+# if passed == True: # generate more detailed info about classifications here
+#   class_1['paper url'] = class_1.index
+#   # class_1.reset_index()
+#   print(class_1)
+#   class_1.to_json(orient ='records', path_or_buf="./src/data/classification_one_datasource.json")
   
-
-
-

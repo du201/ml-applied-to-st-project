@@ -119,6 +119,7 @@ const columns = [
 const data = sourceData;
 
 const DataSourcePage = () => {
+  console.log(data)
   return (
     <div className="p-2">
       <p className="font-weight-bold">{data.length} papers have been classified</p>
@@ -126,7 +127,7 @@ const DataSourcePage = () => {
       <p>Each paper that we classified occupies one row. For the sake of brevity, classification result 
         is represented using numbers. The meaning of numbers for each category is listed in both Classification 1 Result and Classification 2 Result tabs on the website header.<br />
         Whenever we think a paper should be classified as "None of Above" for a category, we would also include our reasoning inside the parenthesis after the number.<br />
-        The raw data comes from <a href="url" target="_blank">https://docs.google.com/spreadsheets/d/1iC_bp4khifrBd9rtzzbiNmFgxylIXfzmzycgzpzE9q4/edit#gid=0</a>.
+        The raw data comes from <a href="url" target="_blank">https://github.com/du201/ml-applied-to-st-project/blob/master/group_classification.xlsx</a>.
       </p>
       <Table bordered columns={columns} dataSource={data} size='small'/>
     </div>
