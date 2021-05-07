@@ -3,6 +3,7 @@ import pandas as pd
 class_1 = pd.read_excel("classification_1.xlsx", index_col=0)
 class_1 = class_1.drop([class_1.index[0]]) # delete the first row which is just category descriptions
 class_1 = class_1.drop([class_1.columns[3], class_1.columns[4], class_1.columns[5]], axis=1) # drop useless columns
+class_1 = class_1.drop([class_1.index[class_1.shape[0] - 1]]) # drop the last row which is calculation
 print("class_1 is: \n")
 print(class_1)
 
