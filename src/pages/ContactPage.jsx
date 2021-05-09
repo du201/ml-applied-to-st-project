@@ -15,21 +15,21 @@ const ContactPage = () => {
         style={{ width: 240 }}
         cover={<img alt="example" src={bolu} />}
       >
-        <Meta title="Boluwatife Fashina" description="Purdue ECE Graduate Student" />
+        <Meta title="Boluwatife Fashina" description="Email: bfashina@purdue.edu" />
       </Card>
       <Card
         hoverable
         style={{ width: 240 }}
         cover={<img alt="example" src={shiqi} />}
       >
-        <Meta title="Shiqi Wang" description="Purdue ECE Undergraduate Student" />
+        <Meta title="Shiqi Wang" description="Email: wang3849@purdue.edu" />
       </Card>
       <Card
         hoverable
         style={{ width: 240 }}
         cover={<img alt="example" src={xin} />}
       >
-        <Meta title="Xin Du" description="Purdue ECE Undergraduate Student" />
+        <Meta title="Xin Du" description="Email: du201@purdue.edu" />
       </Card>
     </div>
   );
